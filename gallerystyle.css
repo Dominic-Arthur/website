@@ -1,0 +1,132 @@
+.gallery {
+  position: relative;
+  background-color: rgb(198, 198, 218);
+  text-align: center;
+}
+
+.mygallery img {
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-button {
+  cursor: pointer;
+  background-color: rgb(32, 38, 58);
+  border-radius: 4px;
+  padding: 2px;
+  margin: 10px 0;
+}
+
+.gallery-button > a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color:rgb(214, 217, 231);
+}
+
+.gallery-button:hover{
+  background-color: rgb(214, 217, 231);
+}
+
+.gallery-button > a:hover {
+  color: rgb(6, 8, 19);
+}
+
+.imgcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.column img:hover {opacity: 0.5;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 2% 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  display: block;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  margin: 45px auto auto ;
+  animation-name: zoom; /* Add Animation - Zoom in the Modal */
+  animation-duration: 0.6s;
+}
+
+.caption {
+  text-align: center;
+  color: whitesmoke;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closemodel {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 0px 5px;
+}
+.closemodel:hover,
+.closemodel:focus {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}

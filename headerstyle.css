@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&display=swap');
+
+* {box-sizing: border-box;}
+
+html, body {height: 100%;}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+.header {
+  background-color: rgb(8, 8, 37);
+  height: 100%;
+  position:relative;
+  top: 0;
+}
+
+/*Hero image in the header*/
+.b-img {
+  background-image:linear-gradient(rgba(248, 249, 253, 0.014), rgb(8, 8, 37)), url("images/dominic.jpg");
+  position:relative;
+  height: 90%;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  margin: auto 10px;
+  box-shadow: 0 5px 5px rgb(0, 0, 10);
+  border-radius: 5px;
+}
+
+.logo {
+  margin: 0;
+  position: relative;
+  top: 80%;
+  text-align: center;
+  font-size: 3em;
+  color: rgb(241, 241, 245);
+  font-family: 'Grenze Gotisch', cursive;
+  word-wrap: break-word;
+}
+/* Position the sidepanel container inside the image for small screen */
+.panelcontainer {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  display: none; /* display in media query */
+}
+
+/* Colapsible side panel */
+.sidepanel {
+  height: 100%;
+  position: fixed;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(8, 8, 37);
+  background-color: rgba(8, 8, 37, 0.835);
+  overflow-x: hidden;
+  padding-top: 25px;
+  transition: 0.3s;
+}
+
+/* The sidepanel links */
+.closebtn ~ a {
+  margin: 40px 0 0 0;
+  text-align: center;
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(214, 217, 231);
+  display: block;
+  transition: 0.3s;
+  border-radius: 35px;
+}
+
+.closebtn ~ a:hover {
+  background-color: rgb(8, 8, 37);
+  border: 1px solid rgb(8, 8, 37);
+}
+/* Style the closs botton*/
+.sidepanel .closebtn {
+  float: right;
+  position: relative;
+  bottom: 15px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 26px;
+  color: rgb(214, 217, 231);
+  background-color: rgb(8, 8, 37);
+  border-radius: 50%;
+  width: 30px;
+  text-align: center;
+}
+
+.sidepanel .closebtn:hover {
+  background-color: rgb(214, 217, 231);
+  color: rgb(8, 8, 37);
+  font-weight: bold;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(8, 8, 37);
+  color: rgb(214, 217, 231);
+  padding: 2px 4px 3px ;
+  border: none;
+  border-radius: 3px;
+  visibility: visible; /* hidden when open */
+}
+
+.openbtn:hover {
+  background-color: rgb(1, 1, 14);
+  border: 1px solid rgb(0, 0, 7); /* expand effect*/
+}
+
+/* Position the navbar container inside the image for big screen */
+.navcontainer {
+  position: relative;
+  margin: 0 10px;
+  padding: auto 0;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+/* Navbar links */
+.navbar a {
+  color: rgb(222, 222, 231);
+  text-align: center;
+  margin: 0 20px;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgb(222, 222, 231);
+  color: rgb(8, 8, 37);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .panelcontainer {
+    display: block;
+  }
+  .navcontainer {
+    display: none;
+  }
+  .logo {
+    font-size: 2.5em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  .header {
+    height: 70%;
+  }
+}

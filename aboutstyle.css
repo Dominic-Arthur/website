@@ -1,0 +1,39 @@
+.about {
+  margin: 0;
+  background-color: rgb(172, 170, 189);
+}
+
+.aboutflex {
+  margin: 0;
+  padding: 5px;
+}
+
+.aboutflex .image {
+  width: 40%;
+  padding: 10px;
+  float: left;
+}
+
+.aboutflex h2, .aboutflex p {
+  text-align: center;
+}
+.aboutflex p {
+  margin: 0 1em;
+}
+
+.image img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px;
+}
+
+@media screen and (max-width:700px) {
+  .aboutflex .image {
+    width: 100%;
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+}

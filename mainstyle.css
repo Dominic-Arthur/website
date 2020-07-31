@@ -1,0 +1,48 @@
+.main {
+  background-color: rgb(212, 212, 226);
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  width: 100%;
+  color: black;
+  position: relative;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20px 2px 10px auto auto auto auto auto auto 10px 2px 20px;
+  grid-template-rows: 20px 2px 10px auto auto auto auto auto auto 10px 2px 20px;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.sideline {
+  background-color: rgb(8, 8, 37);
+  text-align: center;
+
+}
+/* Line surounding Text*/
+#topline {grid-area: 2 / 1 / 2 / 11;}
+#leftline {grid-area: 1 / 2 / 11 / 2;}
+#bottomline {grid-area: 11 / 2 / 11 / 13;}
+#rightline {grid-area: 2 / 12 / 13 / 11;}
+.abouttext {grid-area: 4 / 4 / 10 / 10; }
+
+.intro {
+  font-weight: bold;
+}
+
+.introtext {
+  font-size: 1.1em;
+  text-align: center;
+}
+.greetings {
+  font-size: 4em;
+  margin: 0;
+}
+
+.paragraph {text-align: center;}

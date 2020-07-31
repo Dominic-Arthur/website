@@ -1,0 +1,44 @@
+.footer {
+  background-color: rgb(4, 4, 15);
+  height: 50%;
+  background-size: cover;
+  position:relative;
+  bottom: 0;
+  text-align: center;
+  color: rgb(250, 235, 215);
+  padding-top: 2%;
+}
+
+.footer .contact {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footlink, .contactlink {text-decoration: none; padding: 0 5px;}
+
+.footlink, .footlink:visited{
+  color: rgb(128, 128, 250);
+}
+
+.footlink:hover {
+  background-color: rgb(250, 235, 215);
+  color: rgb(4, 4, 15);
+}
+
+.contactlink i {
+  font-size: xx-large;
+  cursor: pointer;
+  color: rgb(84, 84, 165);
+}
+
+.contactlink i:hover {color:rgb(250, 235, 215);}
+
+footer .copyright{
+  position: absolute;
+  bottom: 0;
+  padding-left: 5px;
+  color: rgb(167, 167, 170);
+}

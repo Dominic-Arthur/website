@@ -1,0 +1,54 @@
+.blog {
+  background-color: rgb(202, 202, 226);
+}
+
+.blog > h2, .blog > p, .blogtle  {
+  text-align: center;
+}
+
+.blog-container {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.blogpost {
+  width: 60%;
+  box-shadow: 3px 3px 3px rgb(4, 9, 34);
+  background-color: rgb(217, 214, 230);
+}
+
+.blogimg {
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+}
+
+.blogdte, .blogart {padding: 0 10px;}
+
+.blogbtn {
+  border-radius: 2px;
+  background-color: rgb(191, 193, 201);
+  color: black;
+  margin-left: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.blogbtn:hover{
+  background-color: rgb(22, 22, 43);
+  color: rgb(191, 193, 201);
+}
+
+.para-container {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:700px) {
+  .blogpost {
+    width: 90%;
+  }
+}
